@@ -15,7 +15,9 @@ public final class ChatViewController: ASDKViewController<ASDisplayNode>, ASTabl
         super.init(node: ASDisplayNode())
 
         node.backgroundColor = theme.backgroundColor
-        node.automaticallyManagesSubnodes = true
+        node.automaticallyManagesSubnodes = false
+        node.addSubnode(tableNode)
+        node.addSubnode(composerNode)
 
         tableNode.dataSource = self
         tableNode.delegate = self
