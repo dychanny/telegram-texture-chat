@@ -19,6 +19,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let nav = UINavigationController(rootViewController: list)
         nav.navigationBar.prefersLargeTitles = true
+        nav.modalPresentationStyle = .fullScreen
 
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = nav
