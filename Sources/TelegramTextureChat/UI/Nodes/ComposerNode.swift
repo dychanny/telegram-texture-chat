@@ -17,11 +17,11 @@ public final class ComposerNode: ASDisplayNode {
 
         textNode.attributedPlaceholderText = NSAttributedString(
             string: "Message",
-            attributes: [.foregroundColor: UIColor.secondaryLabel]
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.secondaryLabel]
         )
         textNode.typingAttributes = [
-            .font: UIFont.systemFont(ofSize: 16),
-            .foregroundColor: UIColor.label
+            NSAttributedString.Key.font.rawValue: UIFont.systemFont(ofSize: 16),
+            NSAttributedString.Key.foregroundColor.rawValue: UIColor.label
         ]
         textNode.style.flexGrow = 1
 
