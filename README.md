@@ -4,8 +4,8 @@ Telegram-like real-time chat UI foundation using **Texture (AsyncDisplayKit)**.
 
 ## ✅ What’s included
 
-- Chat list (`ASTableNode`)
-- Composer/input bar
+- Chat list screen (`ASTableNode`) with Telegram-style rows (avatar/title/preview/time/unread)
+- Chat detail screen + composer/input bar
 - Message/user models + delivery states
 - Theme tokens
 - ViewModel + realtime service protocol + in-memory store
