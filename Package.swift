@@ -8,12 +8,12 @@ let package = Package(
         .library(name: "TelegramTextureChat", targets: ["TelegramTextureChat"])
     ],
     dependencies: [
-        .package(url: "https://github.com/TextureGroup/Texture.git", from: "3.2.0")
+        .package(url: "https://github.com/dychanny/texture-SPM.git", from: "1.0.0")
     ],
     targets: [
         .target(
             name: "TelegramTextureChat",
-            dependencies: [.product(name: "Texture", package: "Texture")],
+            dependencies: [.product(name: "Texture", package: "texture-SPM")],
             path: "Sources/TelegramTextureChat"
         )
     ]

@@ -2,48 +2,35 @@
 
 Telegram-like real-time chat UI foundation using **Texture (AsyncDisplayKit)**.
 
-## Included
+## ✅ What’s included
 
-- Chat list (ASTableNode)
-- Composer/input bar (growing text + send button)
-- Message models + delivery status
-- Theme tokens (light/dark-ready structure)
-- ViewModel + socket service protocol + in-memory store
+- Chat list (`ASTableNode`)
+- Composer/input bar
+- Message/user models + delivery states
+- Theme tokens
+- ViewModel + realtime service protocol + in-memory store
+- iOS app scaffold (`TelegramTextureChatApp`) with mock socket
+- Xcode project generator spec (`project.yml`)
 
-## Stack
+## Texture dependency (custom SPM)
 
-- Swift 5.9+
-- iOS 15+
-- Texture (AsyncDisplayKit)
+This repo uses your custom package:
 
-## Install Texture
+- `https://github.com/dychanny/texture-SPM`
 
-### Option A: Swift Package Manager
+## Generate `.xcodeproj`
 
-Add package:
+Use **XcodeGen** on your Mac:
 
-- URL: `https://github.com/TextureGroup/Texture.git`
-- Product: `Texture`
-
-### Option B: CocoaPods
-
-```ruby
-platform :ios, '15.0'
-use_frameworks!
-
-target 'YourAppTarget' do
-  pod 'Texture'
-end
+```bash
+brew install xcodegen
+cd telegram-texture-chat
+xcodegen generate
+open TelegramTextureChat.xcodeproj
 ```
 
-## Suggested integration
+Then run scheme: `TelegramTextureChat`.
 
-1. Create iOS app target in Xcode.
-2. Add these source folders into your app target.
-3. Set initial root VC to `ChatViewController`.
-4. Wire your websocket transport in `ChatSocketService` implementation.
+## Swift Package usage (optional)
 
-## Notes
-
-This project intentionally provides a clean **foundation** (not a full Telegram clone).
-Bring your own assets/branding and backend contract.
+`Package.swift` also points to your custom Texture package, so you can import this as a package if needed.
