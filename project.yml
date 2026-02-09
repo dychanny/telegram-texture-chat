@@ -31,7 +31,7 @@ targets:
         MARKETING_VERSION: 1.0.0
     dependencies:
       - package: Texture
-        product: Texture
+        product: AsyncDisplayKit
 schemes:
   TelegramTextureChat:
     build:

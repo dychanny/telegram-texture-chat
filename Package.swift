@@ -13,7 +13,7 @@ let package = Package(
     targets: [
         .target(
             name: "TelegramTextureChat",
-            dependencies: [.product(name: "Texture", package: "texture-SPM")],
+            dependencies: [.product(name: "AsyncDisplayKit", package: "texture-SPM")],
             path: "Sources/TelegramTextureChat"
         )
     ]
