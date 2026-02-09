@@ -8,7 +8,7 @@ settings:
 packages:
   Texture:
     url: https://github.com/dychanny/texture-SPM
-    from: 1.0.0
+    branch: master
 targets:
   TelegramTextureChatApp:
     type: application

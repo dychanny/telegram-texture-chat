@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "TelegramTextureChat", targets: ["TelegramTextureChat"])
     ],
     dependencies: [
-        .package(url: "https://github.com/dychanny/texture-SPM.git", from: "1.0.0")
+        .package(url: "https://github.com/dychanny/texture-SPM.git", branch: "master")
     ],
     targets: [
         .target(
